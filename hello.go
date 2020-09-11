@@ -8,6 +8,7 @@ import (
 
 func main() {
 	// Get a greeting message and print it.
-	message := greetings.Hello("Gladys the Conqueror")
+var thing string
+	message := greetings.Hello("Denver Startup Week 2020!")
 	fmt.Println(message)
 }
