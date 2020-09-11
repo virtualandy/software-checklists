@@ -20,6 +20,9 @@ which can be tricker than it sounds :) ).
 #!/bin/sh
 #
 
+FILES=$(go list ./...  | grep -v /vendor/)
+go fmt ${FILES}
+
 {
   go vet ${FILES}
 } || {
