@@ -24,3 +24,7 @@ git secrets --add '.*SECRET\s*=\s*.+'
 git secrets --scan env.example
 ```
 
+Remember to allow your example:
+```
+git secrets --add --allowed '.*md:.*'
+```
